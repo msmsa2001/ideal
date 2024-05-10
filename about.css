@@ -1,0 +1,269 @@
+@import url("global.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    scroll-behavior: smooth;
+}
+
+.navbar,
+.navbar .logo,
+.navbar .navs ul,
+#sidenavs ul li,.story,.mission,.hero .container {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.navbar .navs{
+    position: fixed;
+    right: 2rem;
+}
+.navbar .logo,.contact .content h6,.contact .content h5{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar {
+    width: 100%;
+    padding: var(--max-padding);
+    color: var(--text-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 1005;
+}
+
+.navbar .navs ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.navbar .navs ul{
+    gap: 1.6rem;
+}
+#sidebar{
+    display: none;
+}
+#sidenavs{
+    position: fixed;
+    top: 3rem;
+    right: 0;
+    width: 20rem;
+    background: white;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 100vh;
+    z-index: 1000;
+}
+#sidenavs  ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    padding-bottom: 1rem;
+    border-bottom: 1px solid gainsboro;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+
+}
+@media screen and (max-width:1220px){
+    .footer {
+        padding: 4rem 3rem !important;
+        gap: 1rem !important;
+    }
+   
+}
+@media screen and (max-width:1050px) {
+    #sidebar{
+        display: block;
+        position: fixed;
+        right: 1rem;
+        font-size: 30px;
+    }
+ .navbar .navs ul li{
+        display: none;
+    }
+    .footer,.mission,.container{
+        flex-direction: column;
+    }
+    .footer .logos img{
+        width: 25% !important;
+    }
+    .footer .logos,.container,.mission,.story{
+        text-align: center;
+    }
+    .story{
+        flex-direction: column-reverse;
+    }
+    .hero .committe .team-container{
+        gap: 3rem 3rem !important;
+    }
+    .hero .committe .team-container .box {
+        padding: 1rem 0rem !important;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .footer .information{
+        grid-template-columns: auto !important;
+        background: none !important;
+        padding: 3.5rem 2rem !important;
+    }
+    .container .box{
+        padding: 3rem 1rem !important;
+    }
+    .hero .committe .team-container .box{
+        flex-direction: column;
+        padding: 2rem !important;
+    }
+}
+@media screen and (max-width:600px) {
+    .hero .committe .team-container{
+        grid-template-columns: auto !important;
+    }
+}
+@media screen and (max-width:419px) {
+    .navbar .logo{
+          padding-right: 4rem;
+    }
+}
+@media screen and (max-width:320px) {
+    .navbar .logo{
+        padding-right: 0rem !important;
+  }
+}
+/* hero */
+.hero .home,.hero .committe h2{
+    padding: var(--max2-padding);
+    text-align: center;
+}
+.hero .home h2,.story .content p, .mission .content p, .our-team p,.committe .team-container .box ul li,.contact .content p,.footer .link h6{
+    font-family: Poppins;
+}
+.hero .home h6{
+    font-family: nunito;
+}
+.hero .story .content h2,.hero .mission .content h2,.container .box h2,.our-team h2,.hero .contact .content h2,.contact .content h6,.content h5{
+    font-family: Nunito Sans;
+}
+.hero .home{
+    padding-top: 7rem;
+    color: var(--text-color);
+    background: #F1F4FE;
+}
+.hero .home h2,.hero .story .content h2,.hero .mission .content h2,.container .box h2,.hero .our-team h2,.committe h2{
+    font-size: var(--h2-size);
+    font-weight: 700;
+    line-height: var(--h2-line-height);
+}
+.hero .mission .content h2, .container .box h2,.hero .contact .content h2 {
+    font-size: var(--h6-size);
+}
+.hero .story .content p,.hero .mission .content p,.container .box p,.our-team p{
+    font-size: 16px;
+    width: 94%;
+    color: #7b7b7b;
+}
+.our-team p{
+    font-weight: 500;
+}
+.hero .story,.hero .mission,.container .box,.our-team,.committe h2,.hero .contact .content{
+    line-height: 2rem;
+    gap: 3rem;
+    color: #22495F;
+}
+.hero .story,.hero .mission,.container,.our-team{
+    padding: var(--max3-padding);
+}
+.container .box{
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 3rem;
+margin: var(--max-padding);
+}
+.story img, .mission img,.our-team img{
+    width: 100%;
+}
+.hero .story .content .line, .hero .mission .content .line,.our-team .line,.hero .contact .content .line{
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    gap: 1rem;
+    color: rgba(24, 80, 219, 0.5);
+}
+.hero .story .line::before, .mission .line::before,.our-team .line::before,.hero .contact .content .line::before{
+    content: "";
+    display: block;
+    width: 4rem;
+    border-bottom: 2px solid rgba(24, 80, 219, 0.5);
+}
+/* team */
+.hero .committe .team-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:3rem 8rem;
+    padding: var(--max3-padding);
+}
+.hero .committe .team-container .box{
+    background: #F1F4FE;
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    border-radius: 20px;
+}
+.hero .committe .team-container .box img{
+    border-radius: 50%;
+   
+}
+/* footer */
+.footer{
+    padding: 4rem 6rem;
+    background: #7DA2FF ;
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+}
+.footer .logos   i,.footer .information i{
+    color: white;
+}
+.footer .logos img{
+    width: 40%;
+}
+.footer .logos i{
+    padding: 0.7rem;
+    background: #89A9F9;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+    font-size: 20px;
+
+}
+.footer .information{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    background: #89A9F9;
+    padding: 3.5rem 6rem;
+}
+.footer .information .link h6::after{
+    content: "";
+    display: block;
+    width:3.8rem;
+    border-bottom: 2px solid #1850DB;
+}
+.footer .information .link .arrow{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+.footer .information .link .arrow a{
+    text-decoration: none;
+    font-size: 14.8px;
+    color: black;
+    font-weight: 500;
+}
+.footer .link h6{
+    font-size: 18px;
+    font-weight: 600;
+}

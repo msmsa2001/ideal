@@ -1,0 +1,50 @@
+:root {
+    --max-padding: 0.6rem 3rem;
+    --max2-padding: 4rem 13rem;
+    --max3-padding: 4.8rem 4rem 2rem 4rem;
+    --max4-padding:4rem 8rem;
+    --text-color: #1850DB;
+    --background-color: rgba(155, 176, 215, 1);
+    --background2: #F8FDFF;
+    --btn-padding: 1.2rem 3rem;
+    --btn2-padding: 0.9rem 2.6rem;
+    /*h2*/
+    --h2-size: 50px;
+    --h2-weight: 700;
+    --h2-line-height: 60px;
+    /* h6 */
+    --h6-size: 30px;
+    --h6-weight: 400;
+    --h6-line-height: 45px;
+    /* para */
+    --p-size: 14px;
+    --p-weight: 400;
+    --p-height: 24px;
+}
+
+@media screen and (max-width:1120px) {
+    :root {
+        --max2-padding: 3rem 8rem;
+    }
+}
+
+@media screen and (max-width:1040px) {
+    :root {
+        --max2-padding: 3rem 4rem;
+        --max3-padding: 4.8rem 3rem 2rem 3rem;
+    --max4-padding:4rem 3rem;
+
+    }
+}
+
+@media screen and (max-width:500px) {
+    :root {
+        --max2-padding: 3rem 1rem !important;
+        --max-padding: 0.6rem 1rem;
+        --h2-size: 40px;
+        --max3-padding: 4.8rem 1rem 2rem 1rem;
+        --max4-padding:2rem 1rem;
+
+
+    }
+}

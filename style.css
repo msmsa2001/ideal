@@ -1,0 +1,496 @@
+@import url("global.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    scroll-behavior: smooth;
+}
+
+.navbar,
+.navbar .logo,
+.navbar .navs ul,
+.hero .home,
+.hero .about,
+.empower .programs .box,
+.journey .box,
+.journey .box .count,.donate,.donate .container button a,#sidenavs ul li {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.navbar .navs{
+    position: fixed;
+    right: 2rem;
+}
+.navbar .logo,
+.empower h6,
+.comprehsive .heading h6,
+.journey .box .content .count .number h5,.footer .link h6 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.navbar {
+    width: 100%;
+    padding: var(--max-padding);
+    color: var(--text-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 1000;
+}
+.navbar .navs ul li a,
+.journey .box .content .count .number span {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 400;
+}
+.navbar .navs ul,
+.journey .box,
+.journey .box .content .count {
+    gap: 1.6rem;
+}
+#sidebar{
+    display: none;
+}
+#sidenavs{
+    position: fixed;
+    top: 3rem;
+    right: 0;
+    width: 20rem;
+    background: white;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 100vh;
+    z-index: 1000;
+}
+#sidenavs  ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    padding-bottom: 1rem;
+    border-bottom: 1px solid gainsboro;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+
+}
+@media screen and (max-width:1050px) {
+    #sidebar{
+        display: block;
+        position: fixed;
+        right: 1rem;
+        font-size: 30px;
+    }
+ .navbar .navs ul li{
+        display: none;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer .logos img{
+        width: 25% !important;
+    }
+    .footer .logos{
+        text-align: center;
+
+    }
+}
+@media screen and (max-width:850px) {
+    .footer .information{
+        grid-template-columns: auto !important;
+        background: none !important;
+        padding: 3.5rem 2rem !important;
+    }
+}
+/*home*/
+.hero .home,
+.hero .about,
+.hero .comprehsive .programs,
+.journey,
+.benificiaries .feedback,.donate,.update .container {
+    padding: var(--max-padding);
+}
+.hero .home {
+    padding-top: 10rem;
+    background: var(--background-color);
+    padding-bottom: 0;
+}
+.hero .home h2,
+.home h6,
+.home p,
+.home button a,
+.about button a,.update .box p {
+    font-family: poppins;
+}
+.hero .home h2,
+.home h6,
+.home p,
+.home button a,
+.about button a ,.donate .container button a{
+    color: #F5F5F5;
+}
+.hero .home h2,
+.about h2,
+.empower h2,
+.empower h2 span,
+.comprehsive .heading h2,
+.comprehsive .heading h2 span,
+.journey .box h2,
+.benificiaries .heading h2 {
+    font-size: var(--h2-size);
+    font-weight: 600;
+    line-height: var(--h2-line-height);
+}
+.hero .home h6,
+.about h6 {
+    font-size: var(--h6-size);
+    font-weight: var(--h6-weight);
+    line-height: var(--h6-line-height);
+}
+.hero .home p,
+.about p {
+    font-size: var(--p-size);
+    font-weight: var(--p-weight);
+    line-height: var(--p-height);
+    width: 53%;
+}
+.hero .home button,
+.hero .about button, .donate .container button {
+    padding: var(--btn-padding);
+    background: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    margin-top: 0.8rem;
+}
+.hero .home button a,
+.about button a,.donate .container button a {
+    text-decoration: none;
+}
+/* about */
+.about h2,
+.about h6,
+.empower h2,
+.comprehsive .heading h2,.journey .box .content h2,.benificiaries .heading h2,.donate .container h2,.update .heading h2{
+    font-family: nunito sans;
+}
+.hero .about {
+    background: var(--background2);
+    padding-right: 0;
+    color: #22495F;
+}
+.hero .about .content .line,
+.journey .box .content .head,.donate .container .line {
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    gap: 1rem;
+    color: rgba(24, 80, 219, 0.5);
+}
+.hero .about .content .line::before,.donate .container .line::before {
+    content: "";
+    display: block;
+    width: 4rem;
+    border-bottom: 2px solid rgba(24, 80, 219, 0.5);
+}
+.donate .container .line::before {
+    border-bottom: 2px solid #22495F;
+}
+.hero .about .content,
+.about .content p,
+.benificiaries .heading,.donate .container h2,.donate .container {
+    line-height: 2.5rem;
+}
+.hero .about h6 {
+    font-weight: 600 ;
+}
+.hero .about .content p,
+.empower .programs .box .content p,
+.comprehsive .programs .box h5,
+.comprehsive .programs .box p,
+.journey .box p,
+.journey .box .content .count .number span,.benificiaries .feedback .box p,.update .container .box span,.update .container .box p {
+    font-size: 16px;
+    width: 97%;
+    color: #7b7b7b;
+}
+.hero .about button,
+.journey .box,.donate .container button {
+    padding: var(--btn2-padding);
+}
+/* empower */
+.hero .empower,
+.hero .comprehsive .heading,
+.hero .benificiaries .heading,.update .heading {
+    padding: var(--max2-padding);
+    text-align: center;
+    color: #22495F;
+}
+.hero .empower,.update {
+    background: #F1F4FE;
+}
+.hero .empower h6 {
+    padding: var(--btn-padding);
+}
+.hero .empower .programs .box .content h5 {
+    font-size: 24px;
+    color: #1850DB;
+    margin-bottom: 1rem;
+}
+.empower .programs .box .content p,
+.comprehsive .programs .box,.benificiaries .feedback .box,.donate .container p,.update .container .box {
+    line-height: 1.7rem;
+}
+.empower .programs .box .content {
+    text-align: left;
+    margin-left: 2rem;
+}
+.empower .programs .line2 {
+    transform: rotateX(180deg);
+}
+/* comprehsive */
+.hero .comprehsive .programs {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 4.9rem 1.6rem;
+    margin-bottom: 4rem;
+}
+.hero .comprehsive .programs .box h6 {
+    color: #1850DB;
+}
+.comprehsive .programs .box h5,.benificiaries .feedback .box h6,.update .container .box h5 {
+    font-size: 20px;
+    font-weight: 500;
+}
+/* journey */
+.journey {
+    background: #A1BCFF;
+}
+.journey .box {
+    background: white;
+    margin: 7rem auto;
+}
+.journey .box h2,
+.journey .box .count .number,.benificiaries .feedback .box span,.donate,.donate .container .line  {
+    color: #22495F;
+}
+.journey .box .content .count {
+    margin-top: 1.9rem;
+}
+/* benificiaries */
+.hero .benificiaries {
+    background: #F1F3FF;
+}
+.hero .benificiaries .feedback,.update .container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    margin: auto 2rem;
+}
+.benificiaries .feedback .box{
+    background: white;
+    padding: var(--btn-padding);
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 4rem;
+}
+.benificiaries .feedback .box p{
+    margin-top: 1rem;
+}
+.benificiaries .feedback .box .star i{
+    color: var(--text-color);
+}
+.comprehsive .programs .box a button {
+    position: absolute;
+    top: -7rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* padding: 0.5rem 1rem; */
+    background: transparent;border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    display: none;
+}
+.comprehsive .programs .box a{
+    position: relative;
+}
+.comprehsive .programs .box a:hover button{
+    display: block;
+}
+.comprehsive .programs .box a:hover img,.update .container .box:hover img{
+transform: scale(1.01);
+filter: brightness(45%);
+transition: transform 0.3s ease, filter 0.3s ease;
+}
+/* hover*/
+/* donate */
+.donate{
+    background: #7DA2FF;
+    padding: 3.4rem 4.9rem;
+}
+.donate .container h2,.update .heading h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.donate .container button a{
+    gap: 0.6rem;
+}
+/* .update */
+.update .container .box h5,.update .container .box a{
+    font-family:  "Nunito", sans-serif;
+    padding:0rem 4rem 0 0;
+    font-weight: var(--h2-weight);
+}
+.update .container .box a{
+text-decoration: dashed;
+color: #1850DB;
+}
+@media screen and (max-width:1370px) {
+    .hero .comprehsive .programs {
+        grid-template-columns: auto auto auto;
+    }
+    .update .container{
+        grid-template-columns: auto auto ;
+    }
+    .update .box img,.comprehsive .programs .box img,.home img,.about img{
+        width: 100%;
+    }
+     
+}
+@media screen and (max-width:1220px) {
+    /* .hero .home,.hero .about{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-bottom: 3rem;
+    } */
+    .hero .home p, .hero .journey .box img{
+        width: 100%;
+    }
+    .footer {
+        padding: 4rem 3rem !important;
+        gap: 1rem !important;
+    }
+   
+}
+@media screen and (max-width:1140px) {
+    .journey .box{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .journey .box .content .count{
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width:950px) {
+    .hero .benificiaries .feedback{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:870px) {
+    .line1, .line2{
+        display: none;
+    }
+    .donate{
+        flex-direction: column-reverse;
+    }
+    .empower .programs .box{
+        flex-direction: column;
+    }
+    .empower .programs .box img{
+        width: 60%;
+    }
+    
+}
+@media screen and (max-width:670px) {
+    .hero .comprehsive .programs {
+        grid-template-columns: auto auto;
+    }
+/* .hero .journey .box img{
+    width: 100%;
+}     */
+.hero .benificiaries .feedback,.update .container {
+    grid-template-columns: auto;
+    gap: 2rem;
+}
+}
+@media screen and (max-width:500px) {
+    .hero .comprehsive .programs {
+        grid-template-columns: auto !important;
+    }
+    .journey .box .count{
+        flex-direction: column;
+    }
+    .hero .benificiaries .feedback{
+        margin: auto 0;
+    }
+    .donate{
+        padding: 3.4rem 2rem;
+    }
+    .journey .box,.benificiaries .feedback .box{
+        padding: 0.9rem 1rem;
+    }
+}
+@media screen and (max-width:419px) {
+    .navbar .logo{
+          padding-right: 4rem;
+    }
+}
+@media screen and (max-width:320px) {
+    .navbar .logo{
+        padding-right: 0rem !important;
+  }
+}
+
+/* footer  */
+.footer{
+    padding: 4rem 6rem;
+    background: #7DA2FF;
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+}
+.footer .logos   i,.footer .information i{
+    color: white;
+}
+.footer .logos img{
+    width: 40%;
+}
+.footer .logos i{
+    padding: 0.7rem;
+    background: #89A9F9;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+    font-size: 20px;
+
+}
+.footer .information{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    background: #89A9F9;
+    padding: 3.5rem 6rem;
+}
+.footer .information .link h6::after{
+    content: "";
+    display: block;
+    width:3.8rem;
+    border-bottom: 2px solid #1850DB;
+}
+.footer .information .link .arrow{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+.footer .information .link .arrow a{
+    text-decoration: none;
+    font-size: 14.8px;
+    color: black;
+    font-weight: 500;
+}
+.footer .link h6{
+    font-size: 18px;
+    font-weight: 600;
+}

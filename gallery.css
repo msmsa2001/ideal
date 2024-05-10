@@ -1,0 +1,55 @@
+@import url("global.css");
+#tabs, .tab-content{
+    padding: var(--max-padding);
+}
+#tabs{
+   
+
+}
+#tabs ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+    margin-top: 3rem;
+}
+.tab-link.active {
+    border-bottom: 4px solid #1850DB; 
+  }
+#tabs ul li a{
+    text-decoration: none;
+    color: #8c8b8b;
+    padding: 0rem 3rem;
+}
+.tab-content {
+    display: none;
+}
+.tab-content .img{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.7rem;
+}
+.active {
+    display: block;
+}
+@media screen and (max-width:1000px) {
+    .tab-content .img{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        gap: 1.7rem;
+    }  
+}
+@media screen and (max-width:700px) {
+    .tab-content .img{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1.7rem;
+    }  
+}
+@media screen and (max-width:500px) {
+    .tab-content .img{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1.7rem;
+    }  
+}
