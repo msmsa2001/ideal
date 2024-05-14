@@ -459,6 +459,9 @@ color: #1850DB;
     .navbar .logo{
         padding-right: 0rem !important;
   }
+  .navbar a .logo {
+    font-size: 12px !important;
+}
 }
 
 /* footer  */
