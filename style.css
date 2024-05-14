@@ -30,6 +30,10 @@
     font-size: 20px;
     font-weight: 500;
 }
+.navbar a{
+    color: var(--text-color);
+    text-decoration: none;
+}
 .navbar {
     width: 100%;
     padding: var(--max-padding);
@@ -88,10 +92,20 @@
     .footer{
         flex-direction: column;
     }
+     .hero .home, .hero .about{
+        flex-direction: column-reverse;
+        padding-bottom: 2rem !important;
+     }
+     .home img, .about img{
+        /* width: 65% !important;  */
+     }
+     .about img{
+        text-align: right !important;
+     }
     .footer .logos img{
         width: 25% !important;
     }
-    .footer .logos{
+    .footer .logos,.hero .home,.hero .about{
         text-align: center;
 
     }
@@ -112,7 +126,7 @@
     padding: var(--max-padding);
 }
 .hero .home {
-    padding-top: 10rem;
+    padding-top: 6rem;
     background: var(--background-color);
     padding-bottom: 0;
 }
