@@ -84,7 +84,7 @@
         display: block;
         position: fixed;
         right: 1rem;
-        font-size: 30px;
+        font-size: 25px;
     }
  .navbar .navs ul li{
         display: none;
@@ -96,9 +96,9 @@
         flex-direction: column-reverse;
         padding-bottom: 2rem !important;
      }
-     .home img, .about img{
-        /* width: 65% !important;  */
-     }
+     /* .home img, .about img{
+        width: 65% !important; 
+     } */
      .about img{
         text-align: right !important;
      }
@@ -445,6 +445,9 @@ color: #1850DB;
     }
     .journey .box,.benificiaries .feedback .box{
         padding: 0.9rem 1rem;
+    }
+    .navbar a .logo{
+        font-size: 15px !important;
     }
 }
 @media screen and (max-width:419px) {
