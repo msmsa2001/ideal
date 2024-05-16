@@ -6,7 +6,10 @@
     font-family: Roboto;
     scroll-behavior: smooth;
 }
-
+.navbar a{
+    color: var(--text-color);
+    text-decoration: none;
+}
 .navbar,
 .navbar .logo,
 .navbar .navs ul,
@@ -32,7 +35,7 @@
     position: fixed;
     top: 0;
     background: white;
-    z-index: 1005;
+    z-index: 1000;
 }
 
 .navbar .navs ul li a{
@@ -50,9 +53,9 @@
 }
 #sidenavs{
     position: fixed;
-    top: 3rem;
+    top: 4rem;
     right: 0;
-    width: 20rem;
+    width: 17rem;
     background: white;
     box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
     height: 100vh;
@@ -62,9 +65,10 @@
     text-decoration: none;
     color: var(--text-color);
     padding-bottom: 1rem;
-    border-bottom: 1px solid gainsboro;
+    /* border-bottom: 1px solid gainsboro; */
     width: 100%;
-    padding: 2rem;
+    padding:1.2rem 1rem;
+    font-weight: 600;
     text-align: center;
 
 }
@@ -86,7 +90,7 @@
         display: none;
     }
     .footer,.mission,.container{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .footer .logos img{
         width: 25% !important;
@@ -95,7 +99,8 @@
         text-align: center;
     }
     .story{
-        flex-direction: column-reverse;
+        flex-direction: column;
+        padding-top: 1.5rem !important;
     }
     .hero .committe .team-container{
         gap: 3rem 3rem !important;
@@ -114,15 +119,46 @@
     .container .box{
         padding: 3rem 1rem !important;
     }
-    .hero .committe .team-container .box{
-        flex-direction: column;
-        padding: 2rem !important;
+    .footer .information .link #h1::after{
+        width: 15% !important;
+    }
+    .footer .information .link #h2::after{
+        width: 8% !important;
+    }
+    .footer .information .link #h3::after{
+        width: 12% !important;
+    }
+    
+}
+@media screen and (max-width:650px) {
+    .footer .information .link #h1::after{
+        width: 18% !important;
+    }
+    .footer .information .link #h2::after{
+        width: 11% !important;
+    }
+    .footer .information .link #h3::after{
+        width: 14% !important;
+    }
+}
+@media screen and (max-width:500px) {
+    .navbar a .logo{
+        font-size: 15px !important;
+    }
+    .footer .information .link #h1::after{
+        width: 6.2rem !important;
+    }
+    .footer .information .link #h2::after{
+        width: 3rem !important;
+    }
+    .footer .information .link #h3::after{
+        width: 5rem !important;
     }
 }
 @media screen and (max-width:600px) {
-    .hero .committe .team-container{
+    /* .hero .committe .team-container{
         grid-template-columns: auto !important;
-    }
+    } */
 }
 @media screen and (max-width:419px) {
     .navbar .logo{
@@ -132,12 +168,17 @@
 @media screen and (max-width:320px) {
     .navbar .logo{
         padding-right: 0rem !important;
-  }
+    }
+  .navbar a .logo {
+    font-size: 12px !important;
+}
 }
 /* hero */
 .hero .home,.hero .committe h2{
     padding: var(--max2-padding);
     text-align: center;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
 }
 .hero .home h2,.story .content p, .mission .content p, .our-team p,.committe .team-container .box ul li,.contact .content p,.footer .link h6{
     font-family: Poppins;
@@ -169,13 +210,16 @@
 .our-team p{
     font-weight: 500;
 }
-.hero .story,.hero .mission,.container .box,.our-team,.committe h2,.hero .contact .content{
+.hero .story,.hero .mission,.container .box,.our-team,.committe h2,.hero .contact .content, .hero .contact .content a i {
     line-height: 2rem;
     gap: 3rem;
     color: #22495F;
 }
 .hero .story,.hero .mission,.container,.our-team{
     padding: var(--max3-padding);
+}
+.container,.our-team{
+    padding-top: 0.9rem;
 }
 .container .box{
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
@@ -202,20 +246,68 @@ margin: var(--max-padding);
 /* team */
 .hero .committe .team-container{
     display: grid;
-    grid-template-columns: auto auto;
-    gap:3rem 8rem;
+    grid-template-columns: auto auto auto;
+    gap:3rem 2rem;
     padding: var(--max3-padding);
+    padding-top: 0 !important;
 }
 .hero .committe .team-container .box{
     background: #F1F4FE;
     display: flex;
-    padding: 1rem 2rem;
+    /* flex-direction: column; */
+    align-items: center;
+    padding: 1rem 2rem 1rem 2rem;
     align-items: center;
     border-radius: 20px;
 }
 .hero .committe .team-container .box img{
     border-radius: 50%;
    
+}
+.hero .committe .team-container .box h6{
+    font-family: Segoe UI;
+font-size: 14px;
+font-weight: 700;
+line-height: 20.86px;
+/* text-align: center; */
+}
+.hero .committe .team-container .box span{
+    font-family: Poppins;
+font-size: 11px;
+font-weight: 400;
+line-height: 15.64px;
+text-align: center;
+color: #87898f;
+margin-bottom: 1.7rem;
+}
+.hero .committe .team-container .box p{
+    font-family: Poppins;
+font-size: 11px;
+font-weight: 400;
+line-height: 15.93px;
+text-align: left;
+color: #4d4d4d;
+margin-top: 0.7rem;
+}
+@media screen and (max-width:1377px) {
+    .hero .committe .team-container{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:920px) {
+    .hero .committe .team-container .box{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero .committe .team-container .box p {
+        padding: 0.3rem 2rem 0.7rem 2rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width:700px) {
+    .hero .committe .team-container{
+        grid-template-columns: auto !important;
+    }
 }
 /* footer */
 .footer{
@@ -230,6 +322,10 @@ margin: var(--max-padding);
 }
 .footer .logos img{
     width: 40%;
+}
+.footer .logos p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .footer .logos i{
     padding: 0.7rem;
@@ -249,8 +345,16 @@ margin: var(--max-padding);
 .footer .information .link h6::after{
     content: "";
     display: block;
-    width:3.8rem;
     border-bottom: 2px solid #1850DB;
+}
+.footer .information .link #h1::after{
+    width: 85%;
+}
+.footer .information .link #h2::after{
+    width: 40%;
+}
+.footer .information .link #h3::after{
+    width: 26%;
 }
 .footer .information .link .arrow{
     display: flex;
@@ -266,4 +370,12 @@ margin: var(--max-padding);
 .footer .link h6{
     font-size: 18px;
     font-weight: 600;
+}
+.pvt{
+    /* background: #7DA2FF; */
+    text-align: center;
+    font-size: 14px;
+    color: #828385;
+    padding: 12px;
+    font-weight: 500;
 }

@@ -2,13 +2,13 @@
 #tabs, .tab-content{
     padding: var(--max-padding);
 }
-#tabs{
-   
+#tab2,#tab3,#tab4,#tab5{
+   padding:0.1rem 6rem !important;
 
 }
 #tabs ul{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 100%;
     list-style: none;
     margin-top: 3rem;
@@ -38,6 +38,20 @@
         grid-template-columns: auto auto auto ;
         gap: 1.7rem;
     }  
+    .tab-content{
+        padding: 0 !important;
+        padding-top: 0.6rem !important;
+    }
+    #tab2,#tab3,#tab4,#tab5{
+        padding:0.6rem 0rem 0rem 3rem!important;
+     }
+}
+@media screen and (max-width:800px) {
+    #tabs ul{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
 }
 @media screen and (max-width:700px) {
     .tab-content .img{
@@ -52,4 +66,11 @@
         grid-template-columns: auto;
         gap: 1.7rem;
     }  
+    #tabs ul{
+        grid-template-columns: auto;
+    }
+    #tab2,#tab3,#tab4,#tab5{
+        padding:0.1rem 1rem !important;
+     
+     }
 }

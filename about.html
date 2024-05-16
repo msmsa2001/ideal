@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
     <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -27,7 +26,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -37,17 +36,17 @@
                 <img src="images/logo.svg">
                 <p>IDEAL EDUCATIONAL MOVEMENT</p>
             </div>
-        <div class="navs">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="gallery.html">GALLERY<a></li>
-                <li><a href="team.html">OUR TEAM</a></li>
-                <li><a href="achievement.html">ACHIVEMENTS</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-                <i class="fa-solid fa-bars" id="sidebar" onclick="sidebar()"></i>
-            </ul>
-        </div>
+            <div class="navs">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="gallery.html">GALLERY<a></li>
+                    <li><a href="team.html">OUR TEAM</a></li>
+                    <li><a href="achievement.html">ACHIVEMENTS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <i class="fa-solid fa-bars" id="sidebar" onclick="sidebar()"></i>
+                </ul>
+            </div>
     </div>
     <div class="sidenavs" id="sidenavs">
         <ul>
@@ -81,13 +80,13 @@
             <img src="images/about/about_img2.svg" alt="">
             <div class="content">
                 <div class="line">
-                    OUR STORY
+                    OUR MISSION
                 </div>
-                <h2>Ideal Educational Movement</h2>
-                <p>Founded in 1993, Ideal Educational Movement (IEM) stands as a beacon of educational empowerment and
-                    social change. As a registered charitable organization, we have dedicated ourselves to a profound
-                    commitment—eradicating illiteracy, uplifting educational standards, and empowering students from
-                    Urdu medium schools.</p>
+                <h2>WE BELIEVE THAT EDUCATION IS NOT JUST A TOOL FOR <span style="color: #1850DB;">KNOWLEDGE...</span>
+                </h2>
+                <p>IEM is dedicated to providing quality education to students in Urdu medium schools, especially those
+                    facing economic challenges. Our mission is to combat illiteracy, prevent school dropouts, and
+                    instill a passion for learning among the Urdu-speaking community.</p>
             </div>
         </div>
         <div class="container">
@@ -101,28 +100,29 @@
             <div class="box" data-aos="fade-up" data-aos-duration="3000">
                 <h2>Financial Challenges</h2>
                 <img src="images/about/img2.svg" alt="">
-                <p>Over the past 25 years, IEM has been a beacon of hope for thousands of students. Our commitment to
-                    free coaching classes and educational upliftment activities has resulted in remarkable achievements,
-                    breaking the barriers of illiteracy and opening doors to brighter futures.</p>
+                <p>IEM relies solely on the generous support of well-wishers and donors. Despite facing financial
+                    challenges, we have continued our mission, providing free education to economically disadvantaged
+                    students. Your support is crucial to sustain and expand our efforts.</p>
             </div>
         </div>
     </div>
     <div class="footer">
         <div class="logos">
             <img src="images/logo.svg">
-            <p>The proper Footer on proper time can
-                preserve you protection. We assist you
-                make sureeverybody forward.</p>
-            <div class="icons">                 
-                <a href=""> <i class="fa-brands fa-facebook"></i></a>
-                <a href=""> <i class="fa-brands fa-twitter"></i></a>
-                <a href=""> <i class="fa-brands fa-instagram"></i></a>
-                <a href=""> <i class="fa-brands fa-youtube"></i></a>
-            </div>
+            <p>IDEAL Education: Where Dreams Take Flight,
+                Empowering Minds, Illuminating Futures Bright.
+                Join Us, Learn, and Lead with IDEAL's Light!</p>
+                <div class="icons">                 
+                    <a href="https://www.facebook.com/people/Ideal-Educational-Movement-Saki-Naka-Centre/100064936200295/?mibextid=ZbWKwL"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                    <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@idealeducationalmovement1983">
+                         <i class="fa-brands fa-youtube"></i></a>
+                </div>
         </div>
         <div class="information">
             <div class="link">
-                <h6>Quick Link</h6>
+                <h6 id="h1">Quick Link</h6>
                 <div class="arrow">
                     <i class="fa-solid fa-chevron-right"></i>
                     <a href="index.html">Home</a>
@@ -149,7 +149,7 @@
                 </div>
             </div>
             <div class="link">
-                <h6>Blog</h6>
+                <h6 id="h2">Blog</h6>
                 <div class="arrow">
                     <i class="fa-solid fa-chevron-right"></i>
                     <a href="">People saying about
@@ -164,7 +164,7 @@
                 </div>
             </div>
             <div class="link">
-                <h6>Contact</h6>
+                <h6 id="h3">Contact</h6>
                 <div class="arrow">
                     <i class="fa-solid fa-phone-volume"></i>
                     <a href="tel:9869310460">9869310460/ <span href="tel:9594881230">9594881230</span></a>
@@ -182,11 +182,14 @@
         </div>
     </div>
     </div>
+    <div class="pvt">
+        powered By Pyzon IT Solutions Pvt Ltd.
+    </div>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 </body>
 
 </html>
