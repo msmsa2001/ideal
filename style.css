@@ -126,6 +126,9 @@
     .footer .information .link #h3::after{
         width: 12% !important;
     }
+    .modal-content{
+        width: 60vw !important;
+    }
 }
 
 @media screen and (max-width:650px) {
@@ -282,8 +285,11 @@
     margin-bottom: 1rem;
 }
 .empower .programs .box .content p,
-.comprehsive .programs .box,.benificiaries .feedback .box,.donate .container p,.update .container .box {
+.comprehsive .programs .box,.donate .container p,.update .container .box {
     line-height: 1.7rem;
+}
+.benificiaries .feedback .box{
+    line-height: 1.5rem;
 }
 .empower .programs .box .content {
     text-align: left;
@@ -435,6 +441,9 @@ color: #1850DB;
     .hero .benificiaries .feedback{
         grid-template-columns: auto auto;
     }
+    .modal-content{
+        width: 50vw;
+    }
 }
 @media screen and (max-width:870px) {
     .line1, .line2{
@@ -505,6 +514,9 @@ padding: 0 0 0 0.6rem ;
     .footer .information .link #h3::after{
         width: 5rem !important;
     }
+    .modal-content{
+        width: 85vw !important;
+    }
 }
 @media screen and (max-width:419px) {
     .navbar .logo{
@@ -512,6 +524,9 @@ padding: 0 0 0 0.6rem ;
     }
     .donate .container .line {
         font-size: 14px !important;
+    }
+    .modal-content{
+        width: 90vw !important;
     }
 }
 @media screen and (max-width:320px) {
@@ -617,8 +632,8 @@ padding: 0 0 0 0.6rem ;
   
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
+    margin-top: 4rem;
+  margin: 15% auto;
     border: 1px solid #888;
     width: 30vw;
   }
@@ -629,6 +644,7 @@ padding: 0 0 0 0.6rem ;
     font-size: 28px;
     font-weight: bold;
   }
+ 
   
   .close:hover,
   .close:focus {
