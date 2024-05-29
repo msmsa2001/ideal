@@ -319,6 +319,12 @@
 .journey .box {
     background: white;
     margin: 7rem auto;
+    border-radius: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+button{
+    cursor: pointer;
 }
 .journey .box h2,
 .journey .box .count .number,.benificiaries .feedback .box span,.donate,.donate .container .line  {
